@@ -1,31 +1,68 @@
 #include "Functions.h"
-#include <algorithm> 
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
+// Bucket Sort Implementation
 void bucketSort(vector<int>& arr, int bucketSize) {
-	if (arr.empty()) return;
+    if (arr.empty()) return;
 
-	//range input and output values
-	int minValue = *min_element(arr.begin(), arr.end());
-	int maxValue = *max_element(arr.begin(), arr.end());
+    int minValue = *min_element(arr.begin(), arr.end());
+    int maxValue = *max_element(arr.begin(), arr.end());
 
-	//I used mathematics to determin the number of buckets seen below:
-	//calculate the number of buckets considering the total number of values. We must have at least one
-	int bucketCount = (maxValue - minValue) / bucketSize + 1;
-	vector<vector<int>> buckets(bucketCount);
+    int bucketCount = (maxValue - minValue) / bucketSize + 1;
+    vector<vector<int>> buckets(bucketCount);
 
-	//this is for distributing the array elements into the buckets
-	for (int num : arr) {
-		int bucketIndex = (num - minValue) / bucketSize;
-		//adds the element to the end of the vector
-		buckets[bucketIndex].push_back(num);
-	}
+    for (int num : arr) {
+        int bucketIndex = (num - minValue) / bucketSize;
+        buckets[bucketIndex].push_back(num);
+    }
 
-	//sort the individual buckets, then combine (concatenate) them
-	arr.clear();
-	for (auto& bucket : buckets) {
-		sort(bucket.begin(), bucket.end());
-		arr.insert(arr.end(), bucket.begin(), bucket.end());
-	}
+    arr.clear();
+    for (auto& bucket : buckets) {
+        sort(bucket.begin(), bucket.end());
+        arr.insert(arr.end(), bucket.begin(), bucket.end());
+    }
+}
+
+// Helper function to merge two halves
+void merge(vector<int>& arr, int left, int mid, int right) {
+    vector<int> temp(right - left + 1);
+    int i = left, j = mid + 1, k = 0;
+
+    while (i <= mid && j <= right) {
+        if (arr[i] <= arr[j]) {
+            temp[k++] = arr[i++];
+        }
+        else {
+            temp[k++] = arr[j++];
+        }
+    }
+
+    while (i <= mid) {
+        temp[k++] = arr[i++];
+    }
+    while (j <= right) {
+        temp[k++] = arr[j++];
+    }
+
+    for (k = 0; k < temp.size(); ++k) {
+        arr[left + k] = temp[k];
+    }
+}
+
+// Recursive Merge Sort Function
+void mergeSortRecursive(vector<int>& arr, int left, int right) {
+    if (left >= right) return;
+
+    int mid = left + (right - left) / 2;
+    mergeSortRecursive(arr, left, mid);
+    mergeSortRecursive(arr, mid + 1, right);
+    merge(arr, left, mid, right);
+}
+
+// Merge Sort Wrapper
+void mergeSort(vector<int>& arr) {
+    mergeSortRecursive(arr, 0, arr.size() - 1);
 }

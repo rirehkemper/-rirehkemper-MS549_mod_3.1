@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{54DD8893-4290-4002-9479-B97174577363}|MS549_Mod3_1 Sorting.vcxproj|C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{54DD8893-4290-4002-9479-B97174577363}|MS549_Mod3_1 Sorting.vcxproj|solutionrelative:functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54DD8893-4290-4002-9479-B97174577363}|MS549_Mod3_1 Sorting.vcxproj|C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{54DD8893-4290-4002-9479-B97174577363}|MS549_Mod3_1 Sorting.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -35,25 +39,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "functions.cpp",
+              "DocumentMoniker": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\functions.cpp",
+              "RelativeDocumentMoniker": "functions.cpp",
+              "ToolTip": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\functions.cpp",
+              "RelativeToolTip": "functions.cpp",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T15:59:51.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-15T20:19:08.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Functions.h",
               "DocumentMoniker": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\Functions.h",
               "RelativeDocumentMoniker": "Functions.h",
               "ToolTip": "C:\\Users\\rireh\\source\\repos\\MS549_Mod3_1 Sorting\\Functions.h",
               "RelativeToolTip": "Functions.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-15T15:55:48.665Z",
               "EditorCaption": ""
